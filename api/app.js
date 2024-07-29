@@ -12,6 +12,9 @@ app.use(express.json())
 app.use('/auth', customerRouter)
 app.use('/products', productsRouter)
 app.use('/orders', ordersRouter)
+app.use('/',(req, res) =>{
+    res.json({message:"hello world"})
+})
 
 
 
